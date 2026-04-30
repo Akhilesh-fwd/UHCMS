@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>View Complaints - UHCMS</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <header>
+            <h1>UHCMS</h1>
+            <h2>Submitted Complaints Dashboard</h2>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="complaint.html">Register Complaint</a></li>
+                <li><a href="view.html">View Complaints</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <h2>Recent Maintenance Requests</h2>
+                <div style="overflow-x: auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Resident Name</th>
+                                <th>Room</th>
+                                <th>Category</th>
+                                <th>Issue Description</th>
+                                <th>Date Logged</th>
+                            </tr>
+                        </thead>
+                        <tbody id="complaintList"></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 University Housing Complex Maintenance System. All rights reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

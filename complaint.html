@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Register Complaint - UHCMS</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+    <header>
+        <h1>UHCMS</h1>
+        <h2>Register Complaint</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="complaint.html">Register Complaint</a></li>
+            <li><a href="view.html">View Complaints</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Complaint Form</h2>
+            <form id="complaintForm">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Enter full name" required>
+                
+                <label for="room">Room Address</label>
+                <input type="text" id="room" placeholder="e.g., Block A, Room 102" required>
+                
+                <label for="type">Type of Issue</label>
+                <select id="type" required>
+                    <option value="" disabled selected>Select an issue category...</option>
+                    <option value="Electrical">Electrical</option>
+                    <option value="Plumbing">Plumbing</option>
+                    <option value="Carpentry">Carpentry</option>
+                    <option value="Others">Others</option>
+                </select>
+                
+                <label for="description">Describe your issue</label>
+                <textarea id="description" placeholder="Please provide specific details about the problem..." required></textarea>
+                
+                <label for="date">Date of Complaint</label>
+                <input type="date" id="date" required>
+                
+                <button type="submit">Submit Complaint</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 University Housing Complex Maintenance System. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+</html>
